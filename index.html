@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+
+  <!-- Hour slots for the day -->
+  <!-- first hour slot -->
+  <div class="container text-right">
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>8:00 am</p>
+      </div>
+
+      <div class="input-group form-group col-8 col-sm-8 col-lg-8 col-md-8">
+        <input type="text" class="form-control custom-control" id="8am" rows="2" placeholder="enter item" time="8">
+        <button class="btn" input-id="8am">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+    <!-- second time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>9:00 am</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input type="text" class="form-control custom-control" id="9am" rows="2" time="9" placeholder="enter item">
+        <button class="btn"  input-id="9am">
+
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+
+      </div>
+    </div>
+    <!-- third time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>10:00 am</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="10am" class="form-control custom-control"rows="2" placeholder="enter item" time="10">
+        <button class="btn"  input-id="10am">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+    <!-- fourth time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>11:00 am</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="11am" class="form-control custom-control" rows="2" placeholder="enter item" time="11">
+        <button class="btn"  input-id="11am">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- fifth time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>12:00 pm</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="12pm" class="form-control custom-control" rows="2" style="resize: none;"time="12" placeholder="enter item" >
+        <button class="btn"  input-id="12pm">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- 6th time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>1:00 pm</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="1pm" class="form-control custom-control" rows="2" placeholder="enter item" time="13">
+        <button class="btn"  input-id="1pm">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+    <!-- 7th time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>2:00 pm</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="2pm" class="form-control custom-control" rows="2" time="14" placeholder="enter item" >
+        <button class="btn" input-id="2pm">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+    <!-- 8th time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>3:00 pm</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="3pm" class="form-control custom-control " rows="2" time="15">
+        <button class="btn"  input-id="3pm">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+    <!-- 9th time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>4:00 pm</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="4pm" class="form-control custom-control" rows="2" time="16"placeholder="enter item" >
+        <button class="btn"  input-id="4pm">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+    <!-- 10th time slot -->
+    <div class="row">
+      <div class="col-2 col-sm-2 col-lg-2 col-md-2 input-container input-group">
+        <p>5:00 pm</p>
+      </div>
+
+      <div class="input-group form-group col-8">
+        <input id="5pm" class="form-control custom-control"rows="2" time="17"placeholder="enter item" >
+        <button class="btn"  input-id="5pm">
+          <span style="font-size: 2em; color: #8a93b4 "><i class="glyphicon glyphicon-floppy-disk"></i></span>
+        </button>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy;2022 Liberato Garced
+
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
