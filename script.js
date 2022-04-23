@@ -41,8 +41,8 @@ $(document).ready(function () {
       $(`
     <div class="row time-block">
         <div class="hour col-1">${hour}:00</div>
-        <textarea name="" cols="30" rows="3" class="description col-9 ${presentPastOrFuture}">${saveNotes}</textarea>
-        <div id="hour${hour}" class=" saveBtn col-2">Save 💾</div>
+        <textarea name=""  placeholder="Write your notes here"cols="30" rows="3" class="description col-9 ${presentPastOrFuture}">${saveNotes}</textarea>
+        <div id="hour${hour}" class=" saveBtn col-2"> Save 💾</div> 
     </div>`)
     );
   }
@@ -51,6 +51,7 @@ $(document).ready(function () {
     makeTimeblocks(i);
   }
 
+  
   $(".saveBtn").on("click", function () {
     inputID = $(this).attr("id");
     inputEl = $(this).parent().children()[1].value;
