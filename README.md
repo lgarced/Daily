@@ -1,2 +1,5 @@
 # Daily
-A simple app where the user can store events for future reference. 
+Daily is a simple JS application. The objective was to create a to do list with simple JavaScript. 
+User can store events for future reference. 
+Save Notes and more 
+<img width="864" alt="image" src="https://user-images.githubusercontent.com/93692943/221383223-42c88c3e-bee9-42f7-a30d-1e5f3af3b547.png">
